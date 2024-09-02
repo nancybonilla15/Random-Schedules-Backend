@@ -4,7 +4,8 @@ const studentSchema = new Schema(
   {
     name: String,
     identity: String,
-    birthday: Date
+    birthday: Date,
+    classes: String
   },
   {
     timestamps: true,

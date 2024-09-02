@@ -7,6 +7,7 @@ router.post("/classes/save", async (req, res) => {
 
   const classFound = await Class.findOne({ name: name });
   if (classFound) return res.status(401).json({ 'response': `La clase ${name} ya existe.` });
+  
   const newClass = new Class({
     name,
   });
